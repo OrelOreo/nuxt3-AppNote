@@ -19,11 +19,11 @@ const toggleAuthState = () => {
 const handleSubmit = async () => {
     try {
         if(authState.value === "login"){
-        // SIGN 
+
         await signIn({email: input.email, password: input.password})
         router.push("/myprofile")
     }else {
-        // SIGNUP
+
         await signUp({email: input.email, password: input.password})
         showConfirmEmailMessage.value = true
     }

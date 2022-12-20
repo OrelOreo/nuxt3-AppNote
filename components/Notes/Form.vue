@@ -7,8 +7,6 @@ const notesInput = reactive({
     note: ""
 })
 
-
-
 const handleSubmit =  async () => {
     if(!notesInput.title || !notesInput.note) return;
 

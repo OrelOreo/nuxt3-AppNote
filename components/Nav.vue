@@ -2,7 +2,6 @@
 const { signOut, isLoggedIn } = useAuth()
 
 </script>
-
 <template>
     <div>
         <nav>
